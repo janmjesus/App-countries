@@ -1,6 +1,11 @@
 import React from 'react';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+
+
 import './styles/Header.css';
+
 
 class Header extends React.Component {
 
@@ -9,10 +14,14 @@ class Header extends React.Component {
         return (
 
 
-            <div>
+            <div className="headerBox">
 
-                Hola mundo, this is a header
+                <div className="contentHeader">
 
+                    <FontAwesomeIcon icon={faGlobe} size="2x"/>
+
+
+                </div>
 
             </div>
 

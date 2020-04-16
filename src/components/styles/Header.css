@@ -1,0 +1,24 @@
+.headerBox{
+
+    width: 100%;
+    height: 60px;
+    background-color: #7C8487;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.contentHeader{
+
+
+
+}
+
+.logo{
+
+    width: 70px;
+    height: 35px;
+
+}
