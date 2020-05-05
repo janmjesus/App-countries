@@ -1,0 +1,15 @@
+.containerGrid {
+
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-template-rows: 33% 33% 34%;
+
+}
+
+.gridChildren {
+
+    background-color: lightblue;
+    justify-self: center;
+    align-self: center;
+
+}
