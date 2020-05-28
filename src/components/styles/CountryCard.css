@@ -1,6 +1,14 @@
 .sizeFlag {
 
     width: 200px;
+    height: 150px;
+
+}
+
+.headerCard{
+
     height: 200px;
+    display: flex;
+
 
 }

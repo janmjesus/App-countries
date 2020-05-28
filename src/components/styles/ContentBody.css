@@ -6,12 +6,13 @@
     column-gap: 10px;
     row-gap: 10px;
     background-color: #EED09D;
+    justify-items: center;
+
 
 }
 
 .gridChildren {
 
-    justify-self: stretch;
     align-self: stretch;
     text-align: center;
 
@@ -22,6 +23,40 @@
 .removeBulletPoint {
 
     list-style: none;
+
+}
+
+@media (max-width: 1000px){
+
+    .containerGrid {
+
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        background-color: #EED09D;
+        justify-items: center;
+
+
+    }
+
+}
+
+@media (max-width: 600px){
+
+    .containerGrid {
+
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        column-gap: 10px;
+        row-gap: 10px;
+        background-color: #EED09D;
+        justify-items: center;
+
+
+    }
 
 }
 
