@@ -2,14 +2,32 @@
 
     display: grid;
     grid-template-columns: 33% 33% 34%;
-    grid-template-rows: 33% 33% 34%;
+    grid-template-rows: auto;
+    column-gap: 10px;
+    row-gap: 10px;
 
 }
 
 .gridChildren {
 
     background-color: lightblue;
-    justify-self: center;
-    align-self: center;
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+
+
+
+}
+
+.removeBulletPoint {
+
+    list-style: none;
+
+}
+
+.sizeFlag {
+
+    width: 200px;
+    height: 200px;
 
 }
