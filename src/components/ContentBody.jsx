@@ -2,6 +2,8 @@ import React from 'react';
 
 import './styles/ContentBody.css';
 
+import CountryCard from './CountryCard';
+
 class ContentBody extends React.Component {
 
     state = {
@@ -15,7 +17,7 @@ class ContentBody extends React.Component {
         return(
             <div className="containerGrid">
 
-                    {this.state.countries.map( country => {
+                    {/*this.state.countries.map( country => {
 
                         return(
                             <div className="gridChildren">
@@ -26,8 +28,21 @@ class ContentBody extends React.Component {
                             </div>
                         );
 
-                    })}
+                    })*/}
 
+
+                { this.state.countries.map( country => {
+
+                  return(
+                      <div className="gridChildren">
+                          <li key={ country.alpha2Code } className="removeBulletPoint">
+                            <CountryCard country={country} />
+                          </li>
+                      </div>
+
+                  );
+
+                })}
 
             </div>
 
