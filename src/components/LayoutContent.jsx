@@ -125,40 +125,6 @@ class LayoutContent extends React.Component {
 
     }
 
-    /* componentDidUpdate( prevProps, prevState ){
-
-        console.log('El componente se actualizo aqui');
-
-
-        fetch(`https://restcountries.eu/rest/v2/name/${this.state.filter}`).then( (res) => {
-
-            if( res.ok ){
-                console.log('Peticion exitosa');
-            }
-            else {
-                console.log('Peticion no exitosa');
-            }
-
-            return res.json();
-
-
-        }).then( countries => {
-
-            this.setState( {
-
-                countries,
-
-            });
-
-        }).catch( err => {
-
-            console.log( `Ocurrio un error ${err}` );
-
-        });
-
-    } */
-
-
     render(){
 
         return(

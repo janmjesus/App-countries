@@ -18,7 +18,7 @@ class Header extends React.Component {
 
                 <div className="contentHeader">
 
-                    <FontAwesomeIcon icon={faGlobe} size="2x"/>
+                    <h1 className="titulo">PAISES DEL MUNDO</h1>   <FontAwesomeIcon icon={faGlobe} size="2x" color="white"/>
 
 
                 </div>

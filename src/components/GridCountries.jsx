@@ -9,7 +9,7 @@ class GridCountries extends React.Component {
     render(){
 
         return(
-            <div className="containerGrid">
+            <div className="containerGrid mb-3">
 
                 { this.props.countries.map( (country,index) => {
 
