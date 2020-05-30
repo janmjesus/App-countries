@@ -23,27 +23,6 @@ class CountryCard extends React.Component {
                 </div>
             </div>
         );
-        {
-            /*
-            <React.Fragment>
-
-                <div>
-
-                    <img class="sizeFlag" src={this.props.country.flag} alt={this.props.country.name}/>
-
-                </div>
-                <div>
-
-                    {this.props.country.name}
-
-                </div>
-
-            </React.Fragment>
-
-             */
-
-        }
-
 
 
     }

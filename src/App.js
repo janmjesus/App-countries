@@ -4,7 +4,7 @@ import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Header from './components/Header';
-import ContentBody from './components/ContentBody';
+import LayoutContent from "./components/LayoutContent";
 import Footer from './components/Footer';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
     <div>
 
       <Header />
-      <ContentBody />
+      <LayoutContent />
       <Header />
 
     </div>
