@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './styles/CountryCard.css';
 
@@ -19,7 +20,12 @@ class CountryCard extends React.Component {
                         {this.props.country.name} es un pais que tiene como moneda el {this.props.country.currencies[0].name} y queda en la region
                         de {this.props.country.region}
                     </p>
-                    <a href="#" className="btn btn-primary">Ver Mas Detalles de {this.props.country.name}!</a>
+
+                    <Link className="btn btn-primary" to={`/detail/${this.props.country.name}`}>
+
+                        Ver Mas Detalles {this.props.country.name}!
+
+                    </Link>
                 </div>
             </div>
         );

@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './styles/LayoutContent.css';
+import './styles/HomePage.css';
 
-import GridCountries from "./GridCountries";
-import SearchFilter from './SearchFilter';
+import GridCountries from "../components/GridCountries";
+import SearchFilter from '../components/SearchFilter';
 
 class LayoutContent extends React.Component {
 
@@ -78,14 +78,6 @@ class LayoutContent extends React.Component {
     }
 
     componentWillUpdate( nextProps, nextState ){
-
-        //console.log('El componente se va a actualizar');
-        // console.log( `Este es el state filter ${this.state.filter}` );
-
-        // console.log( `Que contiene el nextState ${ JSON.stringify(nextState) }` );
-
-        //console.log('El componente se actualizo aqui');
-
 
         let rutaSolicitudApi = ( nextState.filter !== '' ) ? 
         `name/${nextState.filter}` : 'all';
