@@ -126,7 +126,7 @@ class DetailCountryPage extends React.Component {
 
                     
                     
-                    <Link className="btn btn-primary" to={`/`}>
+                    <Link onClick={this.props.manejadorClick} className="btn btn-primary" to={`/`}>
 
                         Regresar a Home!
 

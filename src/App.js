@@ -16,28 +16,70 @@ import Layout from './components/Layout';
 import NotFound from './components/NotFound';
 
 
-function App() {
-  return (
-    <div>
+class App extends React.Component {
+  
+  state = {
 
-      <BrowserRouter>
+    nombrePais: 'PAISES DEL MUNDO',
 
-        <Layout>
+  }
 
-          <Switch>
+  handleClick = e => {
 
-            <Route exact path="/" component={HomePage} />
-            <Route exact path="/detail/:nameCountry" component={DetailCountryPage} />
-            <Route component={NotFound} />
+    console.log('Epa envie la vaina brother');
+    console.log( `Este es el objeto e ${e.target}` );
 
-          </Switch>
+    const string = e.target.toString();
 
-        </Layout>
-      
-      </BrowserRouter>
+    console.log( `Este es el string que pasa ${string}` )
 
-    </div>
-  );
+      let separacion = string.substring(29);
+
+      console.log( `Epa esta es la separacion ${separacion}` );
+
+      if( separacion === '' )
+        separacion = 'PAISES DEL MUNDO';
+
+      this.setState({
+
+        nombrePais: separacion,
+
+      });
+    
+
+  }
+
+  render() {
+    
+    return (
+      <div>
+
+        <BrowserRouter>
+
+          <Layout nombrePais={this.state.nombrePais}>
+
+            <Switch>
+
+              <Route exact path="/" >
+                <HomePage manejadorClick={this.handleClick}/>  
+              </Route>
+              <Route exact path="/detail/:nameCountry" >
+
+                <DetailCountryPage manejadorClick={this.handleClick}/>
+                  
+                    
+              </Route>
+              <Route component={NotFound} />
+
+            </Switch>
+
+          </Layout>
+        
+        </BrowserRouter>
+
+      </div>
+    );
+  }
 }
 
 export default App;

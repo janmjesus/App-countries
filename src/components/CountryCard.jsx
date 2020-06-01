@@ -21,7 +21,7 @@ class CountryCard extends React.Component {
                         de {this.props.country.region}
                     </p>
 
-                    <Link className="btn btn-primary" to={`/detail/${this.props.country.name}`}>
+                    <Link onClick={this.props.manejadorClick} className="btn btn-primary" to={`/detail/${this.props.country.name}`}>
 
                         Ver Mas Detalles {this.props.country.name}!
 

@@ -2,20 +2,24 @@ import React from 'react';
 
 import Header from './Header';
 
-function Layout( props ){
+class Layout extends React.Component{
 
-    return(
+    
+    render() {
+        return(
 
 
         <React.Fragment>
 
-            <Header/>
-            { props.children }
-            <Header/>
+            <Header nombrePais={this.props.nombrePais}/>
+            { this.props.children }
+            <Header nombrePais={this.props.nombrePais}/>
 
         </React.Fragment>
 
-    );
+        );
+
+    }
 
 
 }

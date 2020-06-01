@@ -16,7 +16,7 @@ class GridCountries extends React.Component {
                   return(
                       <div className="gridChildren">
                           <li key={ index } className="removeBulletPoint">
-                            <CountryCard country={country} />
+                            <CountryCard manejadorClick={this.props.manejadorClick} country={country} />
                           </li>
                       </div>
 

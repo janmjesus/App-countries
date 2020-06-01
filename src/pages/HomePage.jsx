@@ -124,7 +124,7 @@ class HomePage extends React.Component {
             <React.Fragment>
 
                 <SearchFilter onChange={this.handleChange} textSearch={this.state.filter}/>
-                <GridCountries countries={this.state.countries}/>
+                <GridCountries manejadorClick={this.props.manejadorClick} countries={this.state.countries}/>
 
             </React.Fragment>
 
