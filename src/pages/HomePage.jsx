@@ -5,7 +5,7 @@ import './styles/HomePage.css';
 import GridCountries from "../components/GridCountries";
 import SearchFilter from '../components/SearchFilter';
 
-class LayoutContent extends React.Component {
+class HomePage extends React.Component {
 
     state = {
 
@@ -134,4 +134,4 @@ class LayoutContent extends React.Component {
 
 }
 
-export default LayoutContent;
+export default HomePage;
